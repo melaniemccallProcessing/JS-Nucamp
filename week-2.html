@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+       //Arrow Function
+        // const getFullName = (firstName, lastName) => {
+        //     let fullName = firstName + " " + lastName
+        //     return fullName;
+        // }
+
+        // let isCorrect = false;
+        // let numberToGuess = 5;
+        // do {
+        //     let guess = prompt("Guess the number I'm thinking!");
+        //     console.log(guess);
+        //     if(guess == numberToGuess) {
+        //         isCorrect = true;
+        //         alert("Good job! You guessed it!");
+        //     }
+        // } while(!isCorrect);
+
+        // let isCorrect = false;
+        // let numberToGuess = 5;
+        // let numberOfGuesses = 0;
+        // do {
+        //     //code happens here
+        //     let userGuess = prompt("Guess a number I'm  thinking of!");
+        //     numberOfGuesses++;
+        //     if(userGuess == numberToGuess) {
+        //         isCorrect = true;
+        //         alert(`You guessed correctly! You guessed in this many tries ${numberOfGuesses}`);
+        //     }
+        // } while(!isCorrect);
+
+
+        let isCorrect = false;
+        let numberToGuess = Math.floor(Math.random() * 5) + 1;
+        let numberOfGuesses = 0;
+        do {
+            //code happens here
+            let userGuess = prompt("Guess a number I'm  thinking of!");
+            if(userGuess == numberToGuess) {
+                isCorrect = true;
+                alert(`You guessed correctly! You guessed in this many tries ${numberOfGuesses}`);
+            }
+            numberOfGuesses++;
+        } while(!isCorrect);
+
+
+
+
+
+            // function getFullName (firstName, lastName) {
+            //     alert("Hello " + firstName + lastName)
+            // }
+            // const getFullNames = (firstName,lastName) {
+            //     alert
+            // }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button onclick="askUserQuestions()">Click Here</button>
+
+    <script>
+        //Variables
+        function askUserQuestions() {
+            console.log('This function is working!');
+            let username = prompt("What is your username?");
+            greetUser(username);
+        }
+        function greetUser(username) {
+            if(username !== '') {
+                alert('Hi!' + username);
+            } else {
+                alert('Hi Guest!');
+            }[]
+
+        }
+    </script>
+ </body>
+ </html>

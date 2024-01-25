@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button onclick="createUser()">Hello World</button>
+
+    <script>
+
+        function createUser() {
+            console.log('this runs!');
+            // let username = prompt("What is your username?");
+            let username = getUsername("Guest");
+            console.log(username);
+            alert(`Hello ${username}`);
+        }
+
+         function getUsername(defaultName){
+            let username = prompt("What is your username?");
+            if(username === "") {
+                username = defaultName;
+            }
+            return username;
+        }
+        // function getUsername(defaultName) {
+        //     let username = prompt("What is your username?");
+        //     return username;
+        // }
+
+
+
+        // //Declaration
+        // let myString;
+        // console.log(myString);
+        // //Assignment
+        // myString = "Whatever value you want";
+        // //Initialization
+        // let myNumber = 7;
+        // let myString = "Whatever value you want";
+
+
+
+
+
+
+
+
+
+    // function createUser() {
+    //     let username = getUsername();
+    //     alert(`Hello ${username}`);
+    // }
+
+//give parameter called defaultName
+    // function getUsername(defaultName){
+    //     let username = prompt("What is your username?");
+    //     if(username == "") {
+    //         username = defaultName;
+    //     }
+    //     return username;
+    // }
+
+
+        // function someFunction(){
+        //     console.log("print something");
+        // }
+//         //declaration
+//         let someVariable;
+
+//         //assignment
+//         someVariable = 35;
+// //
+//         //intialization
+//         let someVariable = 35;
+
+
+
+
+
+        // console.log(someVariable);
+        // console.log("some text");
+
+    </script>
+
+</body>
+</html>

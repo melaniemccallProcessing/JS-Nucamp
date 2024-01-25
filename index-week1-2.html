@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button onclick="createUser()"> Create User</button>
+    <script>
+        function createUser() {
+            // prompt("This works!")
+            let userNameReturned = getUsername();
+            alert(`Hi! ${userNameReturned}`);
+        }
+
+        function getUsername() {
+            let defaultName = "User";
+            let username = prompt("Whats your username?");
+            console.log(username);
+            if (username === "") {
+                username = defaultName;
+            }
+            return username;
+        }
+
+        //Declaration
+        // let myName;
+
+        //Assignment
+        // myName = "Melanie";
+
+        //Initialization
+        // let myName = "Melanie";
+
+    </script>
+</body>
+</html>

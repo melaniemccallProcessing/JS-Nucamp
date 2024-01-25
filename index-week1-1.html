@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+  <h1>Welcome</h1>
+
+    <button type="button" onclick="createUser()">Create User</button>
+    <script>
+        function createUser() {
+            console.log("this runs!");
+            // let username = prompt("What is your username?");
+            let username = getUsername("Guest");
+            console.log(username);
+            alert(`Hello ${username}`);
+        }
+        function getUsername() {
+            let username = prompt("What is your username?") || "Guest";
+            return username;
+        }
+
+
+
+
+
+
+           // let username = prompt("What is your username?");
+            // console.log(username);
+            //this is where our code will go
+        //     let username = getUsername("Guest");
+        //     alert(`Hello ${username}`);
+
+        //     // let age = prompt("What is your age?")
+        //     // console.log(age == 12)
+
+        // }
+
+        // function getUsername(defaultName) {
+        //     let username = prompt("What is your username?") || "Guest";
+        //     // if (username) {
+        //     //     return username;
+        //     // } else {
+        //     //     return defaultName;
+        //     // }
+        //     // return defaultName;
+        //     return username;
+        // }
+
+
+
+
+
+
+        // const whateverString = "Another string";
+
+        // //Use Javascript here
+        // //declaration
+        // let myString;
+
+        // //intialization
+        // const myNumber = 4;
+
+        // //assignment
+        // myNumber = 6;
+
+
+
+
+
+
+    </script>
+
+    <script src="js/workshop1.js"></script>
+</body>
+</html>
