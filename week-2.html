@@ -5,64 +5,46 @@
     <title></title>
 </head>
 <body>
+    <button onclick="guessGame()" type="button">Guess!</button>
     <script>
-       //Arrow Function
-        // const getFullName = (firstName, lastName) => {
-        //     let fullName = firstName + " " + lastName
-        //     return fullName;
-        // }
 
-        // let isCorrect = false;
-        // let numberToGuess = 5;
-        // do {
-        //     let guess = prompt("Guess the number I'm thinking!");
-        //     console.log(guess);
-        //     if(guess == numberToGuess) {
-        //         isCorrect = true;
-        //         alert("Good job! You guessed it!");
-        //     }
-        // } while(!isCorrect);
+        function guessGame() {
+            console.log("This function works!");
+            // alert("This function works!");
+            let isCorrect = false;
+            let correctGuess = 5;
+            let numberOfGuesses = 0;
+            console.log("The correct guess is: " + correctGuess);
 
-        // let isCorrect = false;
-        // let numberToGuess = 5;
-        // let numberOfGuesses = 0;
-        // do {
-        //     //code happens here
-        //     let userGuess = prompt("Guess a number I'm  thinking of!");
-        //     numberOfGuesses++;
-        //     if(userGuess == numberToGuess) {
-        //         isCorrect = true;
-        //         alert(`You guessed correctly! You guessed in this many tries ${numberOfGuesses}`);
-        //     }
-        // } while(!isCorrect);
+            do {
+               let userGuess = +prompt("Guess a number!");
+               console.log(userGuess);
+               //checks if the userGuess is equal to the correctGuess
+               numberOfGuesses++;
+               if(userGuess == correctGuess) {
+                    isCorrect = true;
+                    alert("You guessed correctly! It took you this many times to guess correctly:" + numberOfGuesses);
+               }
+            } while(isCorrect == false)
+        }
 
+        //Arrays
+        let arr = ["meerkat", "snow leopard", "giraffe", "lion", "panther", "elephant"];
+        console.log(arr[2]);
+        console.log(arr.length);
 
-        let isCorrect = false;
-        let numberToGuess = Math.floor(Math.random() * 5) + 1;
-        let numberOfGuesses = 0;
-        do {
-            //code happens here
-            let userGuess = prompt("Guess a number I'm  thinking of!");
-            if(userGuess == numberToGuess) {
-                isCorrect = true;
-                alert(`You guessed correctly! You guessed in this many tries ${numberOfGuesses}`);
+        //For Loop for Animals Arr
+        for (let i = 0; i < arr.length; i++) {
+            // console.log(arr[i]);
+            //check if the animal has the letter "m" in it
+            if(arr[i].includes("e")) {
+                console.log(arr[i] + " has an e in it");
             }
-            numberOfGuesses++;
-        } while(!isCorrect);
+        }
 
-
-
-
-
-            // function getFullName (firstName, lastName) {
-            //     alert("Hello " + firstName + lastName)
-            // }
-            // const getFullNames = (firstName,lastName) {
-            //     alert
-            // }
-
-
-
+        for (let animal of arr ) {
+            console.log(animal);
+        }
 
 
 

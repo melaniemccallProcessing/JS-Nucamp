@@ -35,7 +35,7 @@
 
     function checkGuess(guessNumber, target) {
         let correct = false;
-
+        let anotherVariable = 0;
         if (isNaN(guessNumber)) {
             alert('You have not entered a number.\n\nPlease enter a number in the 1-100 range.');
         } else if ((guessNumber < 1) || (guessNumber > 100)) {
